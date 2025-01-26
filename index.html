@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./index.css">
+    <script src="./index.js" defer></script>
 </head>
 <body>
     <h1>DYNAMIC CALCULATOR</h1>
     <div class="md">
-        <input type="text">
+        <input type="text" id="display">
         <div>
             <button value="7" onclick="calc(event)">7</button>
             <button value="8" onclick="calc(event)">8</button>
             <button value="9" onclick="calc(event)">9</button>
             <button value="/" onclick="calc(event)">/</button>
-            <button onclick="allcler(event)">AC</button>
+            <button onclick="allclear(event)">AC</button>
           </div>
           <div>
             <button value="4" onclick="calc(event)">4</button>
@@ -36,7 +37,7 @@
             <button value="00" onclick="calc(event)">00</button>
             <button value="." onclick="calc(event)">.</button>
             <button onclick="del()">DEL</button>
-            <button value="=" onclick="calc(event)">=</button>
+            <button value="=" onclick="my_evaluate()">=</button>
           </div>
     </div>
 </body>
